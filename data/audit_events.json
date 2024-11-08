@@ -1,0 +1,135 @@
+{
+    "pagination": {
+      "total_results": 30,
+      "total_pages": 3,
+      "first": {
+        "href": "/v3/audit_events?page=1&per_page=10"
+      },
+      "last": {
+        "href": "/v3/audit_events?page=3&per_page=10"
+      },
+      "next": {
+        "href": "/v3/audit_events?page=2&per_page=10"
+      },
+      "previous": null
+    },
+    "resources": [
+      {
+        "guid": "a595fe2f-01ff-4965-a50c-290258ab8582",
+        "created_at": "2024-01-08T16:41:23Z",
+        "updated_at": "2024-01-08T16:41:26Z",
+        "type": "audit.app.start",
+        "actor": {
+          "guid": "d144abe3-3d7b-40d4-b63f-2584798d3ee5",
+          "type": "user",
+          "name": "admin"
+        },
+        "target": {
+          "guid": "2e3151ba-9a63-4345-9c5b-6d8c238f4e55",
+          "type": "app",
+          "name": "cf-env-primary"
+        },
+        "data": {},
+        "space": {
+          "guid": "cb97dd25-d4f7-4185-9e6f-ad6e585c207c"
+        },
+        "organization": {
+          "guid": "d9be96f5-ea8f-4549-923f-bec882e32e3c"
+        }
+      },
+      {
+        "guid": "b482faf6-e6c9-4b9a-8087-44af289e4bd",
+        "created_at": "2024-01-08T15:32:11Z",
+        "updated_at": "2024-01-08T15:32:11Z",
+        "type": "audit.service.create",
+        "actor": {
+          "guid": "d144abe3-3d7b-40d4-b63f-2584798d3ee5",
+          "type": "user",
+          "name": "admin"
+        },
+        "target": {
+          "guid": "7b34f1cf-7e73-428a-bb5a-8a17a8058396",
+          "type": "service_instance",
+          "name": "mysql-db"
+        },
+        "data": {},
+        "space": {
+          "guid": "cb97dd25-d4f7-4185-9e6f-ad6e585c207c"
+        },
+        "organization": {
+          "guid": "d9be96f5-ea8f-4549-923f-bec882e32e3c"
+        }
+      },
+      {
+        "guid": "c593fe2f-01dd-4965-a50c-290258ab8123",
+        "created_at": "2024-01-08T14:22:45Z",
+        "updated_at": "2024-01-08T14:22:45Z",
+        "type": "audit.app.update",
+        "actor": {
+          "guid": "d144abe3-3d7b-40d4-b63f-2584798d3ee5",
+          "type": "user",
+          "name": "admin"
+        },
+        "target": {
+          "guid": "2e3151ba-9a63-4345-9c5b-6d8c238f4e55",
+          "type": "app",
+          "name": "openproject"
+        },
+        "data": {
+          "memory": 1024
+        },
+        "space": {
+          "guid": "cb97dd25-d4f7-4185-9e6f-ad6e585c207c"
+        },
+        "organization": {
+          "guid": "d9be96f5-ea8f-4549-923f-bec882e32e3c"
+        }
+      },
+      {
+        "guid": "d784bcd2-34aa-4b87-90cf-123456789abc",
+        "created_at": "2024-01-08T13:15:30Z",
+        "updated_at": "2024-01-08T13:15:30Z",
+        "type": "audit.app.create",
+        "actor": {
+          "guid": "d144abe3-3d7b-40d4-b63f-2584798d3ee5",
+          "type": "user",
+          "name": "admin"
+        },
+        "target": {
+          "guid": "2e3151ba-9a63-4345-9c5b-6d8c238f4e55",
+          "type": "app",
+          "name": "console"
+        },
+        "data": {},
+        "space": {
+          "guid": "cb97dd25-d4f7-4185-9e6f-ad6e585c207c"
+        },
+        "organization": {
+          "guid": "d9be96f5-ea8f-4549-923f-bec882e32e3c"
+        }
+      },
+      {
+        "guid": "e982caf1-56bc-4d23-a789-def012345678",
+        "created_at": "2024-01-08T12:05:15Z",
+        "updated_at": "2024-01-08T12:05:15Z",
+        "type": "audit.service_binding.create",
+        "actor": {
+          "guid": "d144abe3-3d7b-40d4-b63f-2584798d3ee5",
+          "type": "user",
+          "name": "admin"
+        },
+        "target": {
+          "guid": "7b34f1cf-7e73-428a-bb5a-8a17a8058396",
+          "type": "service_binding",
+          "name": "mysql-db-binding"
+        },
+        "data": {},
+        "space": {
+          "guid": "cb97dd25-d4f7-4185-9e6f-ad6e585c207c"
+        },
+        "organization": {
+          "guid": "d9be96f5-ea8f-4549-923f-bec882e32e3c"
+        }
+      }
+    ]
+  }

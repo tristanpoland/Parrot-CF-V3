@@ -1,0 +1,79 @@
+{
+  "pagination": {
+    "total_results": 3,
+    "total_pages": 1,
+    "first": {
+      "href": "https://api.example.org/v3/apps?page=1&per_page=50"
+    },
+    "last": {
+      "href": "https://api.example.org/v3/apps?page=1&per_page=50"
+    },
+    "next": null,
+    "previous": null
+  },
+  "resources": [
+    {
+      "guid": "1cb006ee-fb05-47e1-b541-c34179ddc446",
+      "name": "frontend-app",
+      "state": "STARTED",
+      "created_at": "2024-03-17T21:41:30Z",
+      "updated_at": "2024-03-18T11:32:30Z",
+      "lifecycle": {
+        "type": "buildpack",
+        "data": {
+          "buildpacks": ["nodejs_buildpack"],
+          "stack": "cflinuxfs4"
+        }
+      },
+      "relationships": {
+        "space": {
+          "data": {
+            "guid": "2f35885d-0c9d-4423-83ad-fd05066f8576"
+          }
+        }
+      }
+    },
+    {
+      "guid": "02b4ec9b-94c7-4468-9c23-4e906191a0f8",
+      "name": "backend-api",
+      "state": "STARTED",
+      "created_at": "2024-03-15T18:20:00Z",
+      "updated_at": "2024-03-18T09:15:26Z",
+      "lifecycle": {
+        "type": "buildpack",
+        "data": {
+          "buildpacks": ["java_buildpack"],
+          "stack": "cflinuxfs4"
+        }
+      },
+      "relationships": {
+        "space": {
+          "data": {
+            "guid": "2f35885d-0c9d-4423-83ad-fd05066f8576"
+          }
+        }
+      }
+    },
+    {
+      "guid": "8a5c875c-2bd1-4c7e-b9b2-fd3f8964c004",
+      "name": "worker-app",
+      "state": "CRASHED",
+      "created_at": "2024-03-16T14:30:00Z",
+      "updated_at": "2024-03-18T10:45:26Z",
+      "lifecycle": {
+        "type": "buildpack",
+        "data": {
+          "buildpacks": ["ruby_buildpack"],
+          "stack": "cflinuxfs4"
+        }
+      },
+      "relationships": {
+        "space": {
+          "data": {
+            "guid": "2f35885d-0c9d-4423-83ad-fd05066f8576"
+          }
+        }
+      }
+    }
+  ]
+}

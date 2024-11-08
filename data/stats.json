@@ -1,0 +1,26 @@
+{
+  "apps": {
+    "total": 39,
+    "running": 28,
+    "stopped": 11,
+    "crashed": 0,
+    "change_percent": 4.75
+  },
+  "services": {
+    "total": 12,
+    "bound": 10,
+    "unbound": 2,
+    "change_percent": 0
+  },
+  "memory": {
+    "used_gb": 14.5,
+    "total_gb": 32,
+    "used_percentage": 45.3
+  },
+  "instances": {
+    "total": 50,
+    "running": 42,
+    "crashed": 0,
+    "change_percent": 0
+  }
+}
